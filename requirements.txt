@@ -3,3 +3,4 @@ pydantic
 groq
 uvicorn
 fastapi
+jinja2
