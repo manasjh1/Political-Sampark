@@ -2,7 +2,7 @@ from groq import Groq
 from app.system_prompt import SYSTEM_PROMPT
 
 # Initialize the Groq client with your API key
-client = Groq(api_key="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")
+client = Groq(api_key="")
 
 def get_llm_response(user_input):
     # Check if the input is empty or irrelevant
