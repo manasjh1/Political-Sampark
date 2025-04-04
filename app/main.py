@@ -37,5 +37,5 @@ async def chat_response(request: Request):
     return {"response": bot_response}
 
 if __name__ == "__main__":
-    print("Starting FastAPI server...")  # Debugging print
-    uvicorn.run(app, host="127.0.0.1", port=8000, reload=True)
+    port = int(os.getenv("PORT", 8000))  # Use Render's provided port or default to 8000
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=True)
